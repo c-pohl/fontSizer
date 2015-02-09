@@ -11,17 +11,17 @@
 (function($) {
   $.fn.fontSizer = function(options) {
     var defaults = {
-      'target': 'body',// 対象
-      'type': 'em',  // 単位 px || em || %
-      'default_value': 0.8,   // 初期値(cssでもtargetに同じ数値を指定した方がキレイ)
-      'step': 0.1,   // 目盛り
-      'max': 5.0,   // 最大値
-      'min': 0.1,   // 最小値
-      'cookie': false,  // cookieを有効にするか
-      'expire': 30,    // cookieの期限(日)
-      'id_increase': 'fs_increase',
-      'id_decrease': 'fs_decrease',
-      'id_reset'   : 'fs_reset',
+      'target': 'body',// target element where font size should be changed
+      'type': 'px', // font unit( px || em || % )
+      'default_value': 12, // default fontsize
+      'step': 1, // steps to decreaase/increase fontsize
+      'max': 30, // max fontsize
+      'min': 8, // min fontsize
+      'cookie': false, // set cookie? (true/false)
+      'expire': 30, // cookie expires after % days?
+      'id_increase': 'fs_increase', // element id to increaase font
+      'id_decrease': 'fs_decrease', // element id to decreaase font
+      'id_reset'   : 'fs_reset', // element id to reset font
     };
     var setting = $.extend(defaults, options);
     var tags = new Array('div','td','tr');
