@@ -20,11 +20,14 @@ HTML
 	</div>
 </div>
 
-<script src="//code.jquery.com/jquery-git1.min.js" type="text/javascript"></script>
+<!-- Include jQuery library -->
+<script src="//code.jquery.com/jquery-git1.min.js" type="text/javascript"></script> 
+<!-- Include fontSizer -->
 <script src="jquery.fontSizer.min.js" type="text/javascript"></script>
-<script type="text/javascript">
+<!-- Fire fontSizer function (check OPTIONS for adjustments)-->
+<script type="text/javascript"> 
 $(document).ready(function(){
-  $('#fontSizer a').fontSizer({'type' : 'px', 'default_value' : 35, 'step' : 1, 'max' : 60, 'min' : 10, 'cookie' : true, 'expire' : 30});
+  $('#fontSizer a').fontSizer({'type' : 'px', 'default_value' : 35, 'step' : 1, 'max' : 60, 'min' : 10, 'cookie' : true});
 });
 </script>
 
