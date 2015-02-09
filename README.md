@@ -33,7 +33,7 @@ OPTIONS
 target: 'body', // target element where font size should be changed
 type: 'px', // font unit( px || em || % )
 default_value: 12, // default fontsize
-step: 1, // steps to decreaase/increase fontsize
+step: 1, // steps to decrease/increase fontsize
 max: 30, // max fontsize
 min: 8, // min fontsize
 cookie: false, // set cookie? (true/false)
