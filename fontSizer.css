@@ -1,24 +1,23 @@
 body {
-  font-size: 0.8em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background: #bfbfbf;
 }
 
 /* font sizer */
 #fontSizer {
-  background-color:#000;
+  background:#6bcbca;
   height: 20px;
-  width: 240px;
+  width: 280px;
   position: absolute;
   top: 0;
   right: 40px;
-  padding: 3px;
+  padding: 5px;
   z-index: 9999;
-  -webkit-border-radius:0 0 5px 5px;
-  -moz-border-radius:0 0 5px 5px;
-  border-radius:0 0 5px 5px;
 }
 #fontSizer p {
   color: #fff;
-  font-size:13px;
+  font-size:14px;
   line-height: 1;
   display: inline;
   float: left;
@@ -31,28 +30,12 @@ body {
   margin-right: 5px;
 }
 .fontScaler a {
+  font-size:14px;
+  color: #000;
+  text-decoration: none;
   overflow: hidden;
-  width:24px;
-  height:24px;
   display: block;
   float: left;
   padding: 2px;
-  margin-left: 3px;
-  border: 1px solid black;
-  background: #fff;
-  background-position: center center;
-  background-repeat:no-repeat;
-  text-indent:5000px;
-  -webkit-border-radius:5px;
-  -moz-border-radius:5px;
-  border-radius:5px;
-}
-.fontScaler a#fs_increase {
-  background-image: url('images/zoom-in.png');
-}
-.fontScaler a#fs_decrease {
-  background-image: url('images/zoom-out.png');
-}
-.fontScaler a#fs_reset {
-  background-image: url('images/default.png');
+  border-bottom: 1px dashed #000;
 }
