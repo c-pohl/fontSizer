@@ -1,4 +1,4 @@
-Localized and updated version of the great [FontResize](https://github.com/kohe/fontSizer) Plugin for jQuery by [kohe](https://github.com/kohe).
+Localized and updated version of the great [FontResize](https://github.com/kohe/fontSizer) (by [kohe](https://github.com/kohe)) Plugin for jQuery.
 
 USAGE
 ==============
@@ -7,25 +7,27 @@ HTML
 ```html
 <head>
 <link rel="stylesheet" type="text/css" href="fontSizer.css" />
-<script src="https://code.jquery.com/jquery-git1.min.js" type="text/javascript"></script>
-<script src="jquery.fontSizer.min.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-$(document).ready(function(){
-  $('#fontSizer a').fontSizer({cookie:true});
-});
-</script>
 </head>
 
 <body>
+
 <div id="fontSizer">
-  <p>FONTSIZE</p>
-  <div class="fontScaler">
-    <a href="javascript:void(0)" id="fs_increase" title="increase fontsize">+</a>
-    <a href="javascript:void(0)" id="fs_decrease" title="decrease fontsize">-</a>
-    <a href="javascript:void(0)" id="fs_reset" title="reet fontsize">o</a>
-  </div>
+	<p>FONTSIZE</p>
+	<div class="fontScaler">
+    	<a href="javascript:void(0)" id="fs_increase" title="increase fontsize">+</a>
+		<a href="javascript:void(0)" id="fs_decrease" title="decrease fontsize">-</a>
+		<a href="javascript:void(0)" id="fs_reset" title="reet fontsize">o</a>
+	</div>
 </div>
+
+<script src="//code.jquery.com/jquery-git1.min.js" type="text/javascript"></script>
+<script src="jquery.fontSizer.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#fontSizer a').fontSizer({'type' : 'px', 'default_value' : 35, 'step' : 1, 'max' : 60, 'min' : 10, 'cookie' : true, 'expire' : 30});
+});
+</script>
+
 </body>
 ```
 
