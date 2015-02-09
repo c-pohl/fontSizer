@@ -1,3 +1,5 @@
+Localized and updated version of the great [FontResize](https://github.com/kohe/fontSizer) Plugin for jQuery by [kohe](https://github.com/kohe).
+
 USAGE
 ==============
 HTML
